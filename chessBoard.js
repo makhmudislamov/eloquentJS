@@ -15,3 +15,14 @@
     define a binding size = 8 and change the program so that it works for any size, 
     outputting a grid of the given width and height.
 */
+
+// outer loop handles the lines
+for () {
+// inner loop handles the characters on lines
+    for () {
+
+    }
+    // new line
+    console.log('\n');
+    
+}
