@@ -17,5 +17,10 @@
 // if a number is divisible by 3 and 5:
 // print FizzBuzz
 
-
+for (let number = 1; number <= 100; number++) {
+    if (number % 3) {
+        console.log("Fizz");
+    }
+       
+}
 
