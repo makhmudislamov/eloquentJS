@@ -7,3 +7,15 @@
     (This is actually an interview question that has been claimed to weed out a significant percentage of programmer candidates. 
     So if you solved it, your labor market value just went up.)
 */
+
+// PSEUDOCODE
+// loop over number 1-100
+// if a number is divisible by 3:
+// print Fizz
+// if a number is divisible by 5:
+// print Buzz
+// if a number is divisible by 3 and 5:
+// print FizzBuzz
+
+
+
