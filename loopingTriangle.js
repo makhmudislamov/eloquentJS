@@ -6,7 +6,15 @@
     ###
     ####
     #####
-    #####
     ######
     #######
 */
+
+let triangleHash = "#";
+while ( triangleHash.length <= 7 ) {
+    console.log(triangleHash);
+    triangleHash += "#"
+
+}
+
+
