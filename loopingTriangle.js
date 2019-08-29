@@ -19,10 +19,10 @@ while ( triangleHash.length <= 7 ) {
 }
 */ 
 
-/*
-FOR LOOP SOLUTION
+
+// FOR LOOP SOLUTION
 for (let triangleHash = "#"; triangleHash.length <= 7; triangleHash += "#") {
     console.log(triangleHash);
 }
-*/
+
 
