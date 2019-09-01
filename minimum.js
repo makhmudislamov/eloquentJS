@@ -19,4 +19,11 @@ function minimum (num1, num2) {
 console.log(minimum(123, 42));
 */
 
+// function 3: arrow function
+let minimum = (num1, num2) => {
+    return Math.min(num1, num2)
+}
+console.log(minimum(123, 2));
+
+
 
