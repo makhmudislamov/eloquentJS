@@ -16,8 +16,11 @@
     outputting a grid of the given width and height.
 */
 
+let whiteCube = "";
+let blackCube = "#";
+
 // outer loop handles the lines
-for () {
+for (let lines = 1; lines <= 8; lines ++) {
 // inner loop handles the characters on lines
     for () {
 
