@@ -16,16 +16,23 @@
     outputting a grid of the given width and height.
 */
 
-let whiteCube = "";
-let blackCube = "#";
+
+var size = 8; //this is the variable setting
+
+var board = "";//this is the empty string we're going to add either ' ' , '#' or newline
 
 // outer loop handles the lines
-for (let lines = 1; lines <= 8; lines ++) {
-// inner loop handles the characters on lines
-    for () {
-
+for (var y = 0; y < size; y++) { 
+// adding either ' ' or '#' to the string that's being populated
+    for (var x = 0; x < size; x++) {
+        // checking whether to add space or hash symbol
+        if ((x + y) % 2 == 0)
+            board += " ";
+        else
+            board += "#";
     }
-    // new line
-    console.log('\n');
-    
+    // adding new line
+    board += "\n";
 }
+
+console.log(board);
