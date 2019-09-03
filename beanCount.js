@@ -9,3 +9,22 @@
     that indicates the character that is to be counted (rather than counting only uppercase “B” characters). 
     Rewrite countBs to make use of this new function.
 */
+
+const countBs = str => {
+
+    counter = 0;
+    if (str.length == 0) {
+        return 0
+    } else if (str.length > 0) {
+        for (let char of str) {
+            if (char == "B") {
+                counter++
+            }
+            return counter
+        }
+    } else {
+        return 0
+    }
+}
+
+console.log(counBs("BBC"));
