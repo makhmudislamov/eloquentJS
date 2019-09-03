@@ -16,7 +16,7 @@ const countBs = str => {
     
     if (str.length == 0) {
         return 0;
-    } else if (str.length > 0) {
+    } else {
 
         for (let char of str) {
             if (char == "B") {
@@ -25,20 +25,22 @@ const countBs = str => {
         }
         // return the final counter
         return counter;
-    } else {
-        return 0;
-    }
+    } 
 }
 
 const countChar = (str, char) => {
     
     let counter = 0;
 
-    if (str.length = 0) {
+    if (str.length == 0) {
         return 0;
-    } else if (str.length > 0 ) {
+    } else {
+
         for (char in str) {
-            if (str.includes(char)) {
+            console.log("here1");
+            if (str.includes(char) == true) {
+
+                console.log("here");
                 counter++;
             }
         }
@@ -47,8 +49,8 @@ const countChar = (str, char) => {
     }
 }
 
-// console.log("The number of Bs:", `${countBs("lakjsdhBakjsdhBwedeb")}`);
+console.log("The number of Bs:", `${countBs("lakjsdhBakjsdhBwedeb")}`);
 // console.log(`Number of ${char}s`, `${countChar("lakjsdhBakjsdhBwedeb", "B")}`);
-console.log(countChar("ASC", "C"));
+// console.log(countChar("ASC", "C"));
 
 
