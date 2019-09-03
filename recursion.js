@@ -4,20 +4,18 @@
 */
 
 
-// should accept a positive whole number and should return boolean
 
 const isEven = num => {
-    
-    // if (num < 0) {
-    //     return false;
-    // } 
-    if (isEven(num - 2) == 0) {
+    if (num == 0) {
         return true;
-    } else {
+    } else if (num == 1) {
         return false;
+    } else if (num < 0) {
+        // multiplying to -1
+        return isEven(-num);
+    } else {
+        return isEven(num-2);
     }
-        
-
 }
 
-console.log(isEven(50));
+console.log(isEven(21));
