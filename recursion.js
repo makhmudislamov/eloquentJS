@@ -4,13 +4,19 @@
 */
 
 
+// should accept a positive whole number and should return boolean
+
 const isEven = num => {
     
     // if (num < 0) {
     //     return false;
     // } 
-    if (isEven(num - 2) == 0)
+    if (isEven(num - 2) == 0) {
         return true;
+    } else {
+        return false;
+    }
+        
 
 }
 
