@@ -15,19 +15,38 @@ const countBs = str => {
     let counter = 0;
     
     if (str.length == 0) {
-        return 0
+        return 0;
     } else if (str.length > 0) {
 
         for (let char of str) {
             if (char == "B") {
-                counter++
+                counter++;
             }
         }
         // return the final counter
-        return counter
+        return counter;
     } else {
-        return 0
+        return 0;
     }
 }
 
-console.log(countBs("ASDBASDAD"));
+const countChar = (str, char) => {
+    
+    let counter = 0;
+
+    if (str.length = 0) {
+        return 0;
+    } else if (str.length > 0 ) {
+        for (char in str) {
+            counter++;
+        }
+        
+        return counter;
+    }
+}
+
+console.log("The number of Bs:", `${countBs("lakjsdhBakjsdhBwedeb")}`);
+// console.log(`Number of ${char}s`, `${countChar("lakjsdhBakjsdhBwedeb", "B")}`);
+console.log(countChar("", "C"));
+
+
