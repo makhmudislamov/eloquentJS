@@ -38,15 +38,17 @@ const countChar = (str, char) => {
         return 0;
     } else if (str.length > 0 ) {
         for (char in str) {
-            counter++;
+            if (str.includes(char)) {
+                counter++;
+            }
         }
         
         return counter;
     }
 }
 
-console.log("The number of Bs:", `${countBs("lakjsdhBakjsdhBwedeb")}`);
+// console.log("The number of Bs:", `${countBs("lakjsdhBakjsdhBwedeb")}`);
 // console.log(`Number of ${char}s`, `${countChar("lakjsdhBakjsdhBwedeb", "B")}`);
-console.log(countChar("", "C"));
+console.log(countChar("ASC", "C"));
 
 
