@@ -10,22 +10,24 @@
     Rewrite countBs to make use of this new function.
 */
 
-let countBs = str => {
+const countBs = str => {
 
-    counter = 0;
-
+    let counter = 0;
+    
     if (str.length == 0) {
         return 0
     } else if (str.length > 0) {
+
         for (let char of str) {
-            if (char === "B") {
+            if (char == "B") {
                 counter++
             }
-            return counter
         }
+        // return the final counter
+        return counter
     } else {
         return 0
     }
 }
 
-console.log(countBs("BBBBBC"));
+console.log(countBs("ASDBASDAD"));
