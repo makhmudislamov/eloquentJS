@@ -39,14 +39,12 @@ const countChar = (str, char) => {
             if (i == char) { 
                 counter++;
             } 
-        }
-        
+        }     
         return counter;
     }
 }
 
 // console.log("The number of Bs:", `${countBs("lakjsdhBakjsdhBwedeb")}`);
-console.log(countChar("BBCACS", "B"));
-
+console.log("The count is", `${countChar("BBCACS", "B")}`);
 
 
