@@ -14,8 +14,9 @@ values so that range(5, 2, -1) produces [5, 4, 3, 2].
 const range = (start, end) => {
     let rangeArray = [];
     for (let num = start; num <= end; num++) {
-        return rangeArray.push(num)
+        rangeArray.push(num);
     }
+    return rangeArray;
 }
 console.log(range(1, 10));
 
