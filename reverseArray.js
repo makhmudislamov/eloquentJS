@@ -12,15 +12,16 @@
 const reverseArray = (arr) => {
 
     let reversed = [];
-
-    for (let element of arr) {
-        
+    
+    for (let element = arr[arr.length - 1]; element >= arr[0]; element--) {
+        reversed.push(element);
     }
 
     return reversed;
 }
 
 console.log(reverseArray([1,2,3]))
+
 // const reverseArrayInPlace = () => {
 
 // }
