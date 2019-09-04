@@ -11,12 +11,20 @@ old behavior. The function call range(1, 10, 2) should return [1, 3, 5, 7, 9]. M
 values so that range(5, 2, -1) produces [5, 4, 3, 2].
 */
 
-const range = (start, end) => {
+const range = (start, end, step) => {
     let rangeArray = [];
-    for (let num = start; num <= end; num++) {
-        rangeArray.push(num);
-    }
-    return rangeArray;
+     
+        if (step > 0) {
+            for (let num = start; num <= end; num += step) {
+                rangeArray.push(num);
+            }
+        } else {
+            for (let num = start; num <= end; num -= step) {
+                rangeArray.push(num);
+            }
+        }
+
+        return rangeArray;
 }
 
 const sum = (arr) => {
@@ -28,5 +36,5 @@ const sum = (arr) => {
     return sumOfArray;
 } 
 
-console.log(range(1, 10));
+console.log(range(1,10, 2));
 console.log(sum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
