@@ -18,5 +18,15 @@ const range = (start, end) => {
     }
     return rangeArray;
 }
-console.log(range(1, 10));
 
+const sum = (arr) => {
+    let sumOfArray = 0;
+    
+    for (let num of arr) {
+        sumOfArray += num;
+    }
+    return sumOfArray;
+} 
+
+console.log(range(1, 10));
+console.log(sum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
