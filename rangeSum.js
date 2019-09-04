@@ -18,9 +18,13 @@ const range = (start, end, step = 1) => {
             for (let num = start; num <= end; num += step) {
                 rangeArray.push(num);
             }
-        } else { // need to fix this condition
-            for (let num = start; num <= end; num -= step) {
-                rangeArray.push(num);
+        } else if (step < 0){ // need to fix this condition
+            for (let num = start; num >= end; num -= step) {
+                // rangeArray.unshift(num);
+                console.log(num);
+                
+                
+                
             }
         }
 
@@ -36,5 +40,5 @@ const sum = (arr) => {
     return sumOfArray;
 } 
 
-console.log(range(10, 1, -1));
-console.log(sum(range(1,10)));
+console.log(range(10, 2, -1));
+// console.log(sum(range(1,10)));
