@@ -16,7 +16,7 @@ const reverseArray = (arr) => {
     for (let element = arr[arr.length - 1]; element >= arr[0]; element--) {
         reversed.push(element);
     }
-
+    
     return reversed;
 }
 
